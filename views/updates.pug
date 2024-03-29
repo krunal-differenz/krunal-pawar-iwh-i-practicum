@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= pageTitle
+  body
+    h1 Add Actor(Custom Object) Form
+    form(action="/update-cobj" method="POST")
+      label(for="actorName") Actor name:
+      input(type="text", id="actorName", name="actorName", required)
+      label(for="movieName") Fav movie of Actor::
+      input(type="text", id="movieName", name="movieName", required)
+      label(for="age") Age:
+      input(type="text", id="age", name="age", required)
+      button(type="submit") Submit
+
+    br     
+    br       
+    a(href="/") Return to the homepage

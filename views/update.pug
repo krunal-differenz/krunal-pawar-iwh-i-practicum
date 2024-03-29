@@ -1,0 +1,20 @@
+doctype html
+html(lang ="en")
+    head
+        title Update contact info
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            p actor name: #{actorName}
+            p actor movie name: #{movieName}
+            p actor age: #{age}
+            form(method="POST")
+                lable(for="actorName") actor name:
+                input(type="text" name="actorName" required)
+                input(type="submit" values="Submit")
+                lable(for="movieName") movie name:
+                input(type="text" name="movieName" required)
+                input(type="submit" values="Submit")
+                lable(for="age") age:
+                input(type="text" name="age" required)
+                input(type="submit" values="Submit")
